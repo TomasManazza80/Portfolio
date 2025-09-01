@@ -1,8 +1,8 @@
-// components/PreLoader.jsx
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import logo from "./logo.png"; // Adjust the path as necessary
 
-const PreLoader = ({ logoSrc, onComplete }) => {
+const PreLoader = ({ onComplete }: { onComplete: () => void }) => {
   const preloaderRef = useRef(null);
 
   useEffect(() => {
@@ -55,9 +55,7 @@ const PreLoader = ({ logoSrc, onComplete }) => {
                       rounded-xl p-8
                       bg-white bg-opacity-10 shadow-lg backdrop-filter backdrop-blur-sm 
                       border border-white border-opacity-10">
-        {logoSrc && (
-          <img src={logoSrc} alt="Logo" className="w-24 h-24 mb-4 object-contain" />
-        )}
+        <img src={logo} alt="Logo" className="w-24 h-24 mb-4 object-contain" />
         <div className="relative text-white text-4xl font-bold tracking-widest uppercase overflow-hidden">
           <span className="inline-block relative">E</span>
           <span className="inline-block relative">M</span>
