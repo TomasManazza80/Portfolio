@@ -1,4 +1,4 @@
-import { spaceGrotesk } from "../fonts/spaceGrotesk";
+import { spaceGrotesk } from "../fonts/spaceGrotesk.ts";
 import { motion } from "framer-motion";
 import HeroBackground from "../components/background/HeroBackground";
 import React from "react";
